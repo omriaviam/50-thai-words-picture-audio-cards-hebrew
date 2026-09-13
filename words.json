@@ -1,0 +1,402 @@
+[
+  {
+    "thai": "ยืน",
+    "roman": "yeun",
+    "english": "to stand",
+    "hebrew": "לעמוד",
+    "image": "images/word-001.jpg",
+    "audio": "audio/word-001.mp3"
+  },
+  {
+    "thai": "เดิน",
+    "roman": "dern",
+    "english": "to walk",
+    "hebrew": "ללכת",
+    "image": "images/word-002.jpg",
+    "audio": "audio/word-002.mp3"
+  },
+  {
+    "thai": "วิ่ง",
+    "roman": "wîng",
+    "english": "to run",
+    "hebrew": "לרוץ",
+    "image": "images/word-003.jpg",
+    "audio": "audio/word-003.mp3"
+  },
+  {
+    "thai": "นั่ง",
+    "roman": "nâng",
+    "english": "to sit",
+    "hebrew": "לשבת",
+    "image": "images/word-004.jpg",
+    "audio": "audio/word-004.mp3"
+  },
+  {
+    "thai": "นอน",
+    "roman": "non",
+    "english": "to lie down, to sleep",
+    "hebrew": "לשכב / לישון",
+    "image": "images/word-005.jpg",
+    "audio": "audio/word-005.mp3"
+  },
+  {
+    "thai": "กระโดด",
+    "roman": "grà-dòht",
+    "english": "to jump",
+    "hebrew": "לקפוץ",
+    "image": "images/word-006.jpg",
+    "audio": "audio/word-006.mp3"
+  },
+  {
+    "thai": "คลาน",
+    "roman": "klaan",
+    "english": "to crawl",
+    "hebrew": "לזחול",
+    "image": "images/word-007.jpg",
+    "audio": "audio/word-007.mp3"
+  },
+  {
+    "thai": "ปีน",
+    "roman": "bpeen",
+    "english": "to climb",
+    "hebrew": "לטפס",
+    "image": "images/word-008.jpg",
+    "audio": "audio/word-008.mp3"
+  },
+  {
+    "thai": "ว่ายน้ำ",
+    "roman": "wâai náam",
+    "english": "to swim",
+    "hebrew": "לשחות",
+    "image": "images/word-009.jpg",
+    "audio": "audio/word-009.mp3"
+  },
+  {
+    "thai": "หยุด",
+    "roman": "yùt",
+    "english": "to stop",
+    "hebrew": "לעצור",
+    "image": "images/word-010.jpg",
+    "audio": "audio/word-010.mp3"
+  },
+  {
+    "thai": "ตื่น",
+    "roman": "dtèun",
+    "english": "to wake up",
+    "hebrew": "להתעורר",
+    "image": "images/word-011.jpg",
+    "audio": "audio/word-011.mp3"
+  },
+  {
+    "thai": "หลับ",
+    "roman": "làp",
+    "english": "to fall asleep",
+    "hebrew": "להירדם",
+    "image": "images/word-012.jpg",
+    "audio": "audio/word-012.mp3"
+  },
+  {
+    "thai": "ไป",
+    "roman": "bpai",
+    "english": "to go",
+    "hebrew": "ללכת / לנסוע",
+    "image": "images/word-013.jpg",
+    "audio": "audio/word-013.mp3"
+  },
+  {
+    "thai": "มา",
+    "roman": "maa",
+    "english": "to come",
+    "hebrew": "לבוא",
+    "image": "images/word-014.jpg",
+    "audio": "audio/word-014.mp3"
+  },
+  {
+    "thai": "ขึ้น",
+    "roman": "kêun",
+    "english": "to go up, to get on",
+    "hebrew": "לעלות / לעלות על",
+    "image": "images/word-015.jpg",
+    "audio": "audio/word-015.mp3"
+  },
+  {
+    "thai": "ลง",
+    "roman": "long",
+    "english": "to go down, to get off",
+    "hebrew": "לרדת / לרדת מ־",
+    "image": "images/word-016.jpg",
+    "audio": "audio/word-016.mp3"
+  },
+  {
+    "thai": "เข้า",
+    "roman": "kâo",
+    "english": "to enter",
+    "hebrew": "להיכנס",
+    "image": "images/word-017.jpg",
+    "audio": "audio/word-017.mp3"
+  },
+  {
+    "thai": "ออก",
+    "roman": "òk",
+    "english": "to go out, to leave",
+    "hebrew": "לצאת / לעזוב",
+    "image": "images/word-018.jpg",
+    "audio": "audio/word-018.mp3"
+  },
+  {
+    "thai": "กลับ",
+    "roman": "glàp",
+    "english": "to return, to go back",
+    "hebrew": "לחזור",
+    "image": "images/word-019.jpg",
+    "audio": "audio/word-019.mp3"
+  },
+  {
+    "thai": "ถึง",
+    "roman": "tĕung",
+    "english": "to arrive",
+    "hebrew": "להגיע",
+    "image": "images/word-020.jpg",
+    "audio": "audio/word-020.mp3"
+  },
+  {
+    "thai": "ตก",
+    "roman": "dtòk",
+    "english": "to fall",
+    "hebrew": "ליפול",
+    "image": "images/word-021.jpg",
+    "audio": "audio/word-021.mp3"
+  },
+  {
+    "thai": "บิน",
+    "roman": "bin",
+    "english": "to fly",
+    "hebrew": "לטוס / לעוף",
+    "image": "images/word-022.jpg",
+    "audio": "audio/word-022.mp3"
+  },
+  {
+    "thai": "ขับ",
+    "roman": "kàp",
+    "english": "to drive",
+    "hebrew": "לנהוג",
+    "image": "images/word-023.jpg",
+    "audio": "audio/word-023.mp3"
+  },
+  {
+    "thai": "ขี่",
+    "roman": "kèe",
+    "english": "to ride",
+    "hebrew": "לרכוב",
+    "image": "images/word-024.jpg",
+    "audio": "audio/word-024.mp3"
+  },
+  {
+    "thai": "เดินทาง",
+    "roman": "dern taang",
+    "english": "to travel",
+    "hebrew": "לטייל / לנסוע",
+    "image": "images/word-025.jpg",
+    "audio": "audio/word-025.mp3"
+  },
+  {
+    "thai": "รอ",
+    "roman": "ror",
+    "english": "to wait",
+    "hebrew": "לחכות",
+    "image": "images/word-026.jpg",
+    "audio": "audio/word-026.mp3"
+  },
+  {
+    "thai": "กิน",
+    "roman": "gin",
+    "english": "to eat",
+    "hebrew": "לאכול",
+    "image": "images/word-027.jpg",
+    "audio": "audio/word-027.mp3"
+  },
+  {
+    "thai": "ดื่ม",
+    "roman": "dèum",
+    "english": "to drink",
+    "hebrew": "לשתות",
+    "image": "images/word-028.jpg",
+    "audio": "audio/word-028.mp3"
+  },
+  {
+    "thai": "ชิม",
+    "roman": "chim",
+    "english": "to taste",
+    "hebrew": "לטעום",
+    "image": "images/word-029.jpg",
+    "audio": "audio/word-029.mp3"
+  },
+  {
+    "thai": "หิว",
+    "roman": "hĭw",
+    "english": "to be hungry",
+    "hebrew": "להיות רעב",
+    "image": "images/word-030.jpg",
+    "audio": "audio/word-030.mp3"
+  },
+  {
+    "thai": "อิ่ม",
+    "roman": "ìm",
+    "english": "to be full",
+    "hebrew": "להיות שבע",
+    "image": "images/word-031.jpg",
+    "audio": "audio/word-031.mp3"
+  },
+  {
+    "thai": "สั่ง",
+    "roman": "sàng",
+    "english": "to order (food)",
+    "hebrew": "להזמין (אוכל)",
+    "image": "images/word-032.jpg",
+    "audio": "audio/word-032.mp3"
+  },
+  {
+    "thai": "เสิร์ฟ",
+    "roman": "sèrf",
+    "english": "to serve",
+    "hebrew": "להגיש",
+    "image": "images/word-033.jpg",
+    "audio": "audio/word-033.mp3"
+  },
+  {
+    "thai": "เท",
+    "roman": "tay",
+    "english": "to pour",
+    "hebrew": "למזוג",
+    "image": "images/word-034.jpg",
+    "audio": "audio/word-034.mp3"
+  },
+  {
+    "thai": "หั่น",
+    "roman": "hàn",
+    "english": "to slice, to chop",
+    "hebrew": "לחתוך / לקצוץ",
+    "image": "images/word-035.jpg",
+    "audio": "audio/word-035.mp3"
+  },
+  {
+    "thai": "ปอก",
+    "roman": "bpòk",
+    "english": "to peel",
+    "hebrew": "לקלף",
+    "image": "images/word-036.jpg",
+    "audio": "audio/word-036.mp3"
+  },
+  {
+    "thai": "ทำอาหาร",
+    "roman": "tam aa-hăan",
+    "english": "to cook",
+    "hebrew": "לבשל",
+    "image": "images/word-037.jpg",
+    "audio": "audio/word-037.mp3"
+  },
+  {
+    "thai": "หุง",
+    "roman": "hŭng",
+    "english": "to cook rice",
+    "hebrew": "לבשל אורז",
+    "image": "images/word-038.jpg",
+    "audio": "audio/word-038.mp3"
+  },
+  {
+    "thai": "ต้ม",
+    "roman": "dtôm",
+    "english": "to boil",
+    "hebrew": "להרתיח / לבשל במים",
+    "image": "images/word-039.jpg",
+    "audio": "audio/word-039.mp3"
+  },
+  {
+    "thai": "ทอด",
+    "roman": "tôt",
+    "english": "to deep-fry",
+    "hebrew": "לטגן בשמן עמוק",
+    "image": "images/word-040.jpg",
+    "audio": "audio/word-040.mp3"
+  },
+  {
+    "thai": "ผัด",
+    "roman": "pàt",
+    "english": "to stir-fry",
+    "hebrew": "להקפיץ / לטגן בווק",
+    "image": "images/word-041.jpg",
+    "audio": "audio/word-041.mp3"
+  },
+  {
+    "thai": "ย่าง",
+    "roman": "yâang",
+    "english": "to grill",
+    "hebrew": "לצלות / לגריל",
+    "image": "images/word-042.jpg",
+    "audio": "audio/word-042.mp3"
+  },
+  {
+    "thai": "นึ่ง",
+    "roman": "nêung",
+    "english": "to steam",
+    "hebrew": "לאדות",
+    "image": "images/word-043.jpg",
+    "audio": "audio/word-043.mp3"
+  },
+  {
+    "thai": "อบ",
+    "roman": "òp",
+    "english": "to bake",
+    "hebrew": "לאפות",
+    "image": "images/word-044.jpg",
+    "audio": "audio/word-044.mp3"
+  },
+  {
+    "thai": "เห็น",
+    "roman": "hĕn",
+    "english": "to see",
+    "hebrew": "לראות",
+    "image": "images/word-045.jpg",
+    "audio": "audio/word-045.mp3"
+  },
+  {
+    "thai": "ดู",
+    "roman": "doo",
+    "english": "to look, to watch",
+    "hebrew": "להסתכל / לצפות",
+    "image": "images/word-046.jpg",
+    "audio": "audio/word-046.mp3"
+  },
+  {
+    "thai": "ฟัง",
+    "roman": "fang",
+    "english": "to listen",
+    "hebrew": "להקשיב",
+    "image": "images/word-047.jpg",
+    "audio": "audio/word-047.mp3"
+  },
+  {
+    "thai": "ได้ยิน",
+    "roman": "dâai yin",
+    "english": "to hear",
+    "hebrew": "לשמוע",
+    "image": "images/word-048.jpg",
+    "audio": "audio/word-048.mp3"
+  },
+  {
+    "thai": "พูด",
+    "roman": "pôot",
+    "english": "to speak",
+    "hebrew": "לדבר",
+    "image": "images/word-049.jpg",
+    "audio": "audio/word-049.mp3"
+  },
+  {
+    "thai": "คุย",
+    "roman": "kui",
+    "english": "to chat, to talk",
+    "hebrew": "לשוחח / לדבר",
+    "image": "images/word-050.jpg",
+    "audio": "audio/word-050.mp3"
+  }
+]
