@@ -64,7 +64,24 @@
     font-size: 13px;
   }
   .thai { display: block; margin-top: 13px; font-size: 31px; font-weight: 850; line-height: 1.08; }
-  .roman { direction: ltr; display: block; margin-top: 4px; font-size: 16px; font-weight: 800; color: rgba(255,255,255,.78); }
+  .meaning {
+    direction: ltr;
+    display: block;
+    min-height: 38px;
+    margin: 7px 12px 0;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 800;
+    color: rgba(255,255,255,.78);
+  }
+  .roman {
+    direction: ltr;
+    display: block;
+    font-size: 22px;
+    line-height: 1.15;
+    font-weight: 900;
+    color: #fff;
+  }
   .hint {
     display: inline-flex;
     align-items: center;
@@ -79,7 +96,7 @@
     font-weight: 750;
   }
   .answers {
-    direction: rtl;
+    direction: ltr;
     position: absolute;
     left: 12px;
     right: 12px;
@@ -97,8 +114,7 @@
   }
   .card.revealed .answers { opacity: 1; transform: translateY(0); }
   .card.revealed .hint { visibility: hidden; }
-  .hebrew { font-size: 19px; font-weight: 850; }
-  .english { direction: ltr; font-size: 15px; color: rgba(255,255,255,.76); font-weight: 750; }
+  .english { direction: ltr; }
   #status { text-align: center; min-height: 24px; margin-top: 20px; color: var(--muted); font-size: 14px; }
   @media (max-width: 1150px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 820px) {
@@ -116,7 +132,7 @@
 <main class="wrap">
   <header>
     <h1>50 מילים בתאית</h1>
-    <p class="sub">תמונה + מילה בתאית. לחץ על כרטיס כדי לשמוע ולחשוף עברית ואנגלית ל-3 שניות.</p>
+    <p class="sub">תמונה + מילה בתאית + פירוש באנגלית. לחץ על כרטיס כדי לשמוע ולחשוף את התעתיק ל-3 שניות.</p>
   </header>
   <section class="grid">
 
@@ -124,550 +140,500 @@
         <span class="num">1</span>
         <img src="images/word-001.jpg" alt="" loading="lazy">
         <span class="thai">ยืน</span>
-        <span class="roman">yeun</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to stand</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לעמוד</span>
-          <span class="english">to stand</span>
+          <span class="roman">yeun</span>
         </span>
       </button>
       <button class="card" onclick="playWord(1, this)" aria-label="เดิน to walk">
         <span class="num">2</span>
         <img src="images/word-002.jpg" alt="" loading="lazy">
         <span class="thai">เดิน</span>
-        <span class="roman">dern</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to walk</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">ללכת</span>
-          <span class="english">to walk</span>
+          <span class="roman">dern</span>
         </span>
       </button>
       <button class="card" onclick="playWord(2, this)" aria-label="วิ่ง to run">
         <span class="num">3</span>
         <img src="images/word-003.jpg" alt="" loading="lazy">
         <span class="thai">วิ่ง</span>
-        <span class="roman">wîng</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to run</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לרוץ</span>
-          <span class="english">to run</span>
+          <span class="roman">wîng</span>
         </span>
       </button>
       <button class="card" onclick="playWord(3, this)" aria-label="นั่ง to sit">
         <span class="num">4</span>
         <img src="images/word-004.jpg" alt="" loading="lazy">
         <span class="thai">นั่ง</span>
-        <span class="roman">nâng</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to sit</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשבת</span>
-          <span class="english">to sit</span>
+          <span class="roman">nâng</span>
         </span>
       </button>
       <button class="card" onclick="playWord(4, this)" aria-label="นอน to lie down, to sleep">
         <span class="num">5</span>
         <img src="images/word-005.jpg" alt="" loading="lazy">
         <span class="thai">นอน</span>
-        <span class="roman">non</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to lie down, to sleep</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשכב / לישון</span>
-          <span class="english">to lie down, to sleep</span>
+          <span class="roman">non</span>
         </span>
       </button>
       <button class="card" onclick="playWord(5, this)" aria-label="กระโดด to jump">
         <span class="num">6</span>
         <img src="images/word-006.jpg" alt="" loading="lazy">
         <span class="thai">กระโดด</span>
-        <span class="roman">grà-dòht</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to jump</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לקפוץ</span>
-          <span class="english">to jump</span>
+          <span class="roman">grà-dòht</span>
         </span>
       </button>
       <button class="card" onclick="playWord(6, this)" aria-label="คลาน to crawl">
         <span class="num">7</span>
         <img src="images/word-007.jpg" alt="" loading="lazy">
         <span class="thai">คลาน</span>
-        <span class="roman">klaan</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to crawl</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לזחול</span>
-          <span class="english">to crawl</span>
+          <span class="roman">klaan</span>
         </span>
       </button>
       <button class="card" onclick="playWord(7, this)" aria-label="ปีน to climb">
         <span class="num">8</span>
         <img src="images/word-008.jpg" alt="" loading="lazy">
         <span class="thai">ปีน</span>
-        <span class="roman">bpeen</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to climb</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לטפס</span>
-          <span class="english">to climb</span>
+          <span class="roman">bpeen</span>
         </span>
       </button>
       <button class="card" onclick="playWord(8, this)" aria-label="ว่ายน้ำ to swim">
         <span class="num">9</span>
         <img src="images/word-009.jpg" alt="" loading="lazy">
         <span class="thai">ว่ายน้ำ</span>
-        <span class="roman">wâai náam</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to swim</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשחות</span>
-          <span class="english">to swim</span>
+          <span class="roman">wâai náam</span>
         </span>
       </button>
       <button class="card" onclick="playWord(9, this)" aria-label="หยุด to stop">
         <span class="num">10</span>
         <img src="images/word-010.jpg" alt="" loading="lazy">
         <span class="thai">หยุด</span>
-        <span class="roman">yùt</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to stop</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לעצור</span>
-          <span class="english">to stop</span>
+          <span class="roman">yùt</span>
         </span>
       </button>
       <button class="card" onclick="playWord(10, this)" aria-label="ตื่น to wake up">
         <span class="num">11</span>
         <img src="images/word-011.jpg" alt="" loading="lazy">
         <span class="thai">ตื่น</span>
-        <span class="roman">dtèun</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to wake up</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להתעורר</span>
-          <span class="english">to wake up</span>
+          <span class="roman">dtèun</span>
         </span>
       </button>
       <button class="card" onclick="playWord(11, this)" aria-label="หลับ to fall asleep">
         <span class="num">12</span>
         <img src="images/word-012.jpg" alt="" loading="lazy">
         <span class="thai">หลับ</span>
-        <span class="roman">làp</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to fall asleep</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להירדם</span>
-          <span class="english">to fall asleep</span>
+          <span class="roman">làp</span>
         </span>
       </button>
       <button class="card" onclick="playWord(12, this)" aria-label="ไป to go">
         <span class="num">13</span>
         <img src="images/word-013.jpg" alt="" loading="lazy">
         <span class="thai">ไป</span>
-        <span class="roman">bpai</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to go</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">ללכת / לנסוע</span>
-          <span class="english">to go</span>
+          <span class="roman">bpai</span>
         </span>
       </button>
       <button class="card" onclick="playWord(13, this)" aria-label="มา to come">
         <span class="num">14</span>
         <img src="images/word-014.jpg" alt="" loading="lazy">
         <span class="thai">มา</span>
-        <span class="roman">maa</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to come</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לבוא</span>
-          <span class="english">to come</span>
+          <span class="roman">maa</span>
         </span>
       </button>
       <button class="card" onclick="playWord(14, this)" aria-label="ขึ้น to go up, to get on">
         <span class="num">15</span>
         <img src="images/word-015.jpg" alt="" loading="lazy">
         <span class="thai">ขึ้น</span>
-        <span class="roman">kêun</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to go up, to get on</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לעלות / לעלות על</span>
-          <span class="english">to go up, to get on</span>
+          <span class="roman">kêun</span>
         </span>
       </button>
       <button class="card" onclick="playWord(15, this)" aria-label="ลง to go down, to get off">
         <span class="num">16</span>
         <img src="images/word-016.jpg" alt="" loading="lazy">
         <span class="thai">ลง</span>
-        <span class="roman">long</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to go down, to get off</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לרדת / לרדת מ־</span>
-          <span class="english">to go down, to get off</span>
+          <span class="roman">long</span>
         </span>
       </button>
       <button class="card" onclick="playWord(16, this)" aria-label="เข้า to enter">
         <span class="num">17</span>
         <img src="images/word-017.jpg" alt="" loading="lazy">
         <span class="thai">เข้า</span>
-        <span class="roman">kâo</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to enter</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להיכנס</span>
-          <span class="english">to enter</span>
+          <span class="roman">kâo</span>
         </span>
       </button>
       <button class="card" onclick="playWord(17, this)" aria-label="ออก to go out, to leave">
         <span class="num">18</span>
         <img src="images/word-018.jpg" alt="" loading="lazy">
         <span class="thai">ออก</span>
-        <span class="roman">òk</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to go out, to leave</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לצאת / לעזוב</span>
-          <span class="english">to go out, to leave</span>
+          <span class="roman">òk</span>
         </span>
       </button>
       <button class="card" onclick="playWord(18, this)" aria-label="กลับ to return, to go back">
         <span class="num">19</span>
         <img src="images/word-019.jpg" alt="" loading="lazy">
         <span class="thai">กลับ</span>
-        <span class="roman">glàp</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to return, to go back</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לחזור</span>
-          <span class="english">to return, to go back</span>
+          <span class="roman">glàp</span>
         </span>
       </button>
       <button class="card" onclick="playWord(19, this)" aria-label="ถึง to arrive">
         <span class="num">20</span>
         <img src="images/word-020.jpg" alt="" loading="lazy">
         <span class="thai">ถึง</span>
-        <span class="roman">tĕung</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to arrive</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להגיע</span>
-          <span class="english">to arrive</span>
+          <span class="roman">tĕung</span>
         </span>
       </button>
       <button class="card" onclick="playWord(20, this)" aria-label="ตก to fall">
         <span class="num">21</span>
         <img src="images/word-021.jpg" alt="" loading="lazy">
         <span class="thai">ตก</span>
-        <span class="roman">dtòk</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to fall</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">ליפול</span>
-          <span class="english">to fall</span>
+          <span class="roman">dtòk</span>
         </span>
       </button>
       <button class="card" onclick="playWord(21, this)" aria-label="บิน to fly">
         <span class="num">22</span>
         <img src="images/word-022.jpg" alt="" loading="lazy">
         <span class="thai">บิน</span>
-        <span class="roman">bin</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to fly</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לטוס / לעוף</span>
-          <span class="english">to fly</span>
+          <span class="roman">bin</span>
         </span>
       </button>
       <button class="card" onclick="playWord(22, this)" aria-label="ขับ to drive">
         <span class="num">23</span>
         <img src="images/word-023.jpg" alt="" loading="lazy">
         <span class="thai">ขับ</span>
-        <span class="roman">kàp</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to drive</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לנהוג</span>
-          <span class="english">to drive</span>
+          <span class="roman">kàp</span>
         </span>
       </button>
       <button class="card" onclick="playWord(23, this)" aria-label="ขี่ to ride">
         <span class="num">24</span>
         <img src="images/word-024.jpg" alt="" loading="lazy">
         <span class="thai">ขี่</span>
-        <span class="roman">kèe</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to ride</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לרכוב</span>
-          <span class="english">to ride</span>
+          <span class="roman">kèe</span>
         </span>
       </button>
       <button class="card" onclick="playWord(24, this)" aria-label="เดินทาง to travel">
         <span class="num">25</span>
         <img src="images/word-025.jpg" alt="" loading="lazy">
         <span class="thai">เดินทาง</span>
-        <span class="roman">dern taang</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to travel</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לטייל / לנסוע</span>
-          <span class="english">to travel</span>
+          <span class="roman">dern taang</span>
         </span>
       </button>
       <button class="card" onclick="playWord(25, this)" aria-label="รอ to wait">
         <span class="num">26</span>
         <img src="images/word-026.jpg" alt="" loading="lazy">
         <span class="thai">รอ</span>
-        <span class="roman">ror</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to wait</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לחכות</span>
-          <span class="english">to wait</span>
+          <span class="roman">ror</span>
         </span>
       </button>
       <button class="card" onclick="playWord(26, this)" aria-label="กิน to eat">
         <span class="num">27</span>
         <img src="images/word-027.jpg" alt="" loading="lazy">
         <span class="thai">กิน</span>
-        <span class="roman">gin</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to eat</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לאכול</span>
-          <span class="english">to eat</span>
+          <span class="roman">gin</span>
         </span>
       </button>
       <button class="card" onclick="playWord(27, this)" aria-label="ดื่ม to drink">
         <span class="num">28</span>
         <img src="images/word-028.jpg" alt="" loading="lazy">
         <span class="thai">ดื่ม</span>
-        <span class="roman">dèum</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to drink</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשתות</span>
-          <span class="english">to drink</span>
+          <span class="roman">dèum</span>
         </span>
       </button>
       <button class="card" onclick="playWord(28, this)" aria-label="ชิม to taste">
         <span class="num">29</span>
         <img src="images/word-029.jpg" alt="" loading="lazy">
         <span class="thai">ชิม</span>
-        <span class="roman">chim</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to taste</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לטעום</span>
-          <span class="english">to taste</span>
+          <span class="roman">chim</span>
         </span>
       </button>
       <button class="card" onclick="playWord(29, this)" aria-label="หิว to be hungry">
         <span class="num">30</span>
         <img src="images/word-030.jpg" alt="" loading="lazy">
         <span class="thai">หิว</span>
-        <span class="roman">hĭw</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to be hungry</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להיות רעב</span>
-          <span class="english">to be hungry</span>
+          <span class="roman">hĭw</span>
         </span>
       </button>
       <button class="card" onclick="playWord(30, this)" aria-label="อิ่ม to be full">
         <span class="num">31</span>
         <img src="images/word-031.jpg" alt="" loading="lazy">
         <span class="thai">อิ่ม</span>
-        <span class="roman">ìm</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to be full</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להיות שבע</span>
-          <span class="english">to be full</span>
+          <span class="roman">ìm</span>
         </span>
       </button>
       <button class="card" onclick="playWord(31, this)" aria-label="สั่ง to order (food)">
         <span class="num">32</span>
         <img src="images/word-032.jpg" alt="" loading="lazy">
         <span class="thai">สั่ง</span>
-        <span class="roman">sàng</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to order (food)</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להזמין (אוכל)</span>
-          <span class="english">to order (food)</span>
+          <span class="roman">sàng</span>
         </span>
       </button>
       <button class="card" onclick="playWord(32, this)" aria-label="เสิร์ฟ to serve">
         <span class="num">33</span>
         <img src="images/word-033.jpg" alt="" loading="lazy">
         <span class="thai">เสิร์ฟ</span>
-        <span class="roman">sèrf</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to serve</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להגיש</span>
-          <span class="english">to serve</span>
+          <span class="roman">sèrf</span>
         </span>
       </button>
       <button class="card" onclick="playWord(33, this)" aria-label="เท to pour">
         <span class="num">34</span>
         <img src="images/word-034.jpg" alt="" loading="lazy">
         <span class="thai">เท</span>
-        <span class="roman">tay</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to pour</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">למזוג</span>
-          <span class="english">to pour</span>
+          <span class="roman">tay</span>
         </span>
       </button>
       <button class="card" onclick="playWord(34, this)" aria-label="หั่น to slice, to chop">
         <span class="num">35</span>
         <img src="images/word-035.jpg" alt="" loading="lazy">
         <span class="thai">หั่น</span>
-        <span class="roman">hàn</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to slice, to chop</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לחתוך / לקצוץ</span>
-          <span class="english">to slice, to chop</span>
+          <span class="roman">hàn</span>
         </span>
       </button>
       <button class="card" onclick="playWord(35, this)" aria-label="ปอก to peel">
         <span class="num">36</span>
         <img src="images/word-036.jpg" alt="" loading="lazy">
         <span class="thai">ปอก</span>
-        <span class="roman">bpòk</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to peel</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לקלף</span>
-          <span class="english">to peel</span>
+          <span class="roman">bpòk</span>
         </span>
       </button>
       <button class="card" onclick="playWord(36, this)" aria-label="ทำอาหาร to cook">
         <span class="num">37</span>
         <img src="images/word-037.jpg" alt="" loading="lazy">
         <span class="thai">ทำอาหาร</span>
-        <span class="roman">tam aa-hăan</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to cook</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לבשל</span>
-          <span class="english">to cook</span>
+          <span class="roman">tam aa-hăan</span>
         </span>
       </button>
       <button class="card" onclick="playWord(37, this)" aria-label="หุง to cook rice">
         <span class="num">38</span>
         <img src="images/word-038.jpg" alt="" loading="lazy">
         <span class="thai">หุง</span>
-        <span class="roman">hŭng</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to cook rice</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לבשל אורז</span>
-          <span class="english">to cook rice</span>
+          <span class="roman">hŭng</span>
         </span>
       </button>
       <button class="card" onclick="playWord(38, this)" aria-label="ต้ม to boil">
         <span class="num">39</span>
         <img src="images/word-039.jpg" alt="" loading="lazy">
         <span class="thai">ต้ม</span>
-        <span class="roman">dtôm</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to boil</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להרתיח / לבשל במים</span>
-          <span class="english">to boil</span>
+          <span class="roman">dtôm</span>
         </span>
       </button>
       <button class="card" onclick="playWord(39, this)" aria-label="ทอด to deep-fry">
         <span class="num">40</span>
         <img src="images/word-040.jpg" alt="" loading="lazy">
         <span class="thai">ทอด</span>
-        <span class="roman">tôt</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to deep-fry</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לטגן בשמן עמוק</span>
-          <span class="english">to deep-fry</span>
+          <span class="roman">tôt</span>
         </span>
       </button>
       <button class="card" onclick="playWord(40, this)" aria-label="ผัด to stir-fry">
         <span class="num">41</span>
         <img src="images/word-041.jpg" alt="" loading="lazy">
         <span class="thai">ผัด</span>
-        <span class="roman">pàt</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to stir-fry</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להקפיץ / לטגן בווק</span>
-          <span class="english">to stir-fry</span>
+          <span class="roman">pàt</span>
         </span>
       </button>
       <button class="card" onclick="playWord(41, this)" aria-label="ย่าง to grill">
         <span class="num">42</span>
         <img src="images/word-042.jpg" alt="" loading="lazy">
         <span class="thai">ย่าง</span>
-        <span class="roman">yâang</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to grill</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לצלות / לגריל</span>
-          <span class="english">to grill</span>
+          <span class="roman">yâang</span>
         </span>
       </button>
       <button class="card" onclick="playWord(42, this)" aria-label="นึ่ง to steam">
         <span class="num">43</span>
         <img src="images/word-043.jpg" alt="" loading="lazy">
         <span class="thai">นึ่ง</span>
-        <span class="roman">nêung</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to steam</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לאדות</span>
-          <span class="english">to steam</span>
+          <span class="roman">nêung</span>
         </span>
       </button>
       <button class="card" onclick="playWord(43, this)" aria-label="อบ to bake">
         <span class="num">44</span>
         <img src="images/word-044.jpg" alt="" loading="lazy">
         <span class="thai">อบ</span>
-        <span class="roman">òp</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to bake</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לאפות</span>
-          <span class="english">to bake</span>
+          <span class="roman">òp</span>
         </span>
       </button>
       <button class="card" onclick="playWord(44, this)" aria-label="เห็น to see">
         <span class="num">45</span>
         <img src="images/word-045.jpg" alt="" loading="lazy">
         <span class="thai">เห็น</span>
-        <span class="roman">hĕn</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to see</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לראות</span>
-          <span class="english">to see</span>
+          <span class="roman">hĕn</span>
         </span>
       </button>
       <button class="card" onclick="playWord(45, this)" aria-label="ดู to look, to watch">
         <span class="num">46</span>
         <img src="images/word-046.jpg" alt="" loading="lazy">
         <span class="thai">ดู</span>
-        <span class="roman">doo</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to look, to watch</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להסתכל / לצפות</span>
-          <span class="english">to look, to watch</span>
+          <span class="roman">doo</span>
         </span>
       </button>
       <button class="card" onclick="playWord(46, this)" aria-label="ฟัง to listen">
         <span class="num">47</span>
         <img src="images/word-047.jpg" alt="" loading="lazy">
         <span class="thai">ฟัง</span>
-        <span class="roman">fang</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to listen</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">להקשיב</span>
-          <span class="english">to listen</span>
+          <span class="roman">fang</span>
         </span>
       </button>
       <button class="card" onclick="playWord(47, this)" aria-label="ได้ยิน to hear">
         <span class="num">48</span>
         <img src="images/word-048.jpg" alt="" loading="lazy">
         <span class="thai">ได้ยิน</span>
-        <span class="roman">dâai yin</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to hear</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשמוע</span>
-          <span class="english">to hear</span>
+          <span class="roman">dâai yin</span>
         </span>
       </button>
       <button class="card" onclick="playWord(48, this)" aria-label="พูด to speak">
         <span class="num">49</span>
         <img src="images/word-049.jpg" alt="" loading="lazy">
         <span class="thai">พูด</span>
-        <span class="roman">pôot</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to speak</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לדבר</span>
-          <span class="english">to speak</span>
+          <span class="roman">pôot</span>
         </span>
       </button>
       <button class="card" onclick="playWord(49, this)" aria-label="คุย to chat, to talk">
         <span class="num">50</span>
         <img src="images/word-050.jpg" alt="" loading="lazy">
         <span class="thai">คุย</span>
-        <span class="roman">kui</span>
-        <span class="hint">לחץ לחשיפה + שמע</span>
+        <span class="english meaning">to chat, to talk</span>
+        <span class="hint">לחץ לתעתיק + שמע</span>
         <span class="answers">
-          <span class="hebrew">לשוחח / לדבר</span>
-          <span class="english">to chat, to talk</span>
+          <span class="roman">kui</span>
         </span>
       </button>
   </section>
